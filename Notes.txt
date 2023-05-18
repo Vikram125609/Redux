@@ -1,0 +1,52 @@
+What is redux ?
+Redux is a predictable state container for javascript apps 
+1. Redux is for javascript application not tied to react. Can be used even with Angular, Veu or vanila javascript 
+2. Redux is a library for javascript aaps
+3. Redux stores the state of your application 
+4. State of an app is the state shared by all individual component this include the data and the UI Logic 
+5. If your app is medium to large in size 
+i. The state of the application 
+state = {
+    isUserLoggedIn: true,
+    username: 'Vikram',
+    profileUrl: '',
+    onlineUsers: [],
+    isModalOpened: false
+}
+Redux will store and manage the Application State 
+
+Redux is predictable
+1. Predicatable in what way ?
+Redux is a state container 
+The State of the Application Can Change
+In Redux a pattern is enforced to ensure all the state transition are explicit and can be tracked 
+(Changes to your application state become predictable)
+
+Why Redux ?
+1. If you want to manage the global state of your application in a predictable redux can help you ?
+2. The pattern and the tools provided by the redux make it easier to understand when,where,why and how the state in your application is being updated and how the application logic will behave when those changes occur 
+3. Redux guide you towards writing code that is predictable and testable which help give you confidence that your application will work as expected 
+
+What is Redux Toolkit ?
+Redux Toolkit is the official opinionated, batteries-included toolset for the efficient Redux Development
+It is also intended to be the Standard way to write redux application
+
+Redux is great but it has few short comming 
+Configuring redux in an seems complicated 
+In addition to redux a lot of other packages have to be installed to get redux to do something usefull 
+Redux required too much boiler plate code 
+Redux toolkit serves as an abstraction over redux It hides the difficult part ensuring you have good developer experience 
+
+Redux Toolkit featuring React 
+Redux or Redux Toolkit don't need UI Library to work 
+
+
+Package : React-Redux
+React is a UI Library 
+Redux is a State Management Library
+They both work indepenendtly of each other. 
+
+Direact usage of redux in react is very confusing so we are using React-redux package 
+
+React-Redux is the official Redux UI binding library for react 
+Not all application need redux 
