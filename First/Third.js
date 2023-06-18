@@ -1,6 +1,11 @@
-// Multiple reducers
+// Middleware
+// Is the suggested way to extend redux with custom functionality
+// Provide a third party extension point between dispatching an action and the moment it reaches the reducer
+// Use middleware for logging, crashing reporting, performing asynchronus task etc.
 const redux = require('redux');
 const { createStore, combineReducers, bindActionCreators } = redux;
+const { applyMiddleware } = require('redux');
+const logger = require('redux-logger').createLogger();
 
 const CAKE_ORDERED = 'CAKE_ORDERED';
 const CAKE_RESTOKED = 'CAKE_RESTOKED';
@@ -53,11 +58,10 @@ const rootReducer = combineReducers({
     cake: cakeReducer,
     icecream: icecreamReducer
 })
-const store = createStore(rootReducer);
-const unsubscribe = store.subscribe(() => {
-    console.log(store.getState());
-});
+const store = createStore(rootReducer, applyMiddleware(logger));
+const unsubscribe = store.subscribe(() => {});
 const actions = bindActionCreators({ orderCake, restokeCake, orderIcecream, restokeIcecream }, store?.dispatch);
+console.log(initialCakeState)
 actions?.orderCake();
 actions?.restokeCake();
 actions?.orderIcecream();
