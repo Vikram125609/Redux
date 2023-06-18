@@ -1,5 +1,5 @@
 const redux = require('redux');
-const { createStore } = redux;
+const { createStore, bindActionCreators } = redux;
 const CAKE_ORDERED = 'CAKE_ORDERED';
 const CAKE_RESTOKED = 'CAKE_RESTOKED';
 
@@ -28,4 +28,12 @@ store.dispatch(orderCake());
 store.dispatch(orderCake());
 store.dispatch(orderCake());
 store.dispatch(restokeCake());
+
+// Helpher function that redux provides that is bind action creator function 
+// Bind action creator is not really necessary 
+const actions = bindActionCreators({ orderCake, restokeCake }, store?.dispatch);
+actions.orderCake();
+actions.orderCake();
+actions.orderCake();
+actions.restokeCake();
 unsubscribe();
