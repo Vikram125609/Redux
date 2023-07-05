@@ -50,3 +50,12 @@ Direact usage of redux in react is very confusing so we are using React-redux pa
 
 React-Redux is the official Redux UI binding library for react 
 Not all application need redux 
+
+Redux Toolkit
+Redux toolkit is the official opinionated batteries-included toolset for efficient redux development
+Abstract over the setup process
+Handle the most common use case 
+Include some useful utilites
+
+With redux toolkit it is recommended to group together the reducer logic and action for a single feature in a single file the file should contain slice at it suffix
+The entire application is split into slices and managed individually

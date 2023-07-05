@@ -1,0 +1,24 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vikram125609/Redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vikram125609/Redux/issues"
+  },
+  "homepage": "https://github.com/Vikram125609/Redux#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "redux-logger": "^3.0.6"
+  }
+}
